@@ -84,7 +84,7 @@ img {
   top: -2px; }
 
 .main-content {
-  padding: 4% 3%;
+  padding: 2% 3%;
   width: 100%;
   background: #fff;
   margin-right: 10px;
@@ -107,20 +107,50 @@ img {
 .fw-bold {
   font-weight: 600; }
 
-.form__buttons {
-  margin: 20px 0; }
-
 .btn {
   padding: 8px 16px;
   background: #4488FF;
   color: rgba(255, 255, 255, 0.9);
   border: none;
-  border-radius: 2px; }
-  .btn:hover {
+  border-radius: 2px;
+  margin: 0 10px 10px 0; }
+  .btn:hover, .btn:focus {
     color: rgba(255, 255, 255, 0.9);
     background: #69A0F6;
     cursor: pointer; }
   .btn:active {
     background: #3D7AE6; }
+  .btn:disabled {
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    background: none;
+    color: rgba(0, 0, 0, 0.32); }
+    .btn:disabled:hover {
+      cursor: default; }
+  .btn_pseudo {
+    color: rgba(0, 0, 0, 0.9);
+    background: none; }
+    .btn_pseudo:hover, .btn_pseudo:focus, .btn_pseudo:active {
+      color: #4488ff;
+      background: none; }
+    .btn_pseudo:disabled {
+      background: none;
+      color: rgba(0, 0, 0, 0.32); }
+      .btn_pseudo:disabled:hover {
+        cursor: default; }
+
+.form__buttons__description {
+  padding-left: 20px;
+  margin: 20px 0; }
+  .form__buttons__description .form__label {
+    margin-bottom: 0; }
+    .form__buttons__description .form__label__title {
+      font-size: 14px;
+      line-height: 22px; }
+  .form__buttons__description input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,18 +2,62 @@
   &__label {
     width: 40%;
     margin: 0 40px 20px 0;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     &__title {
       font-size: 12px;
       line-height: 20px;
     }
 
-    &__input {
-      border-radius: 2px;
-      border: 1px solid rgba(0, 0, 0, 0.32);
-      padding: 5px 10px;
-      font-size: 14px;
-      line-height: 22px;
-      width: calc(100% - 20px);
+    /* Create a custom checkbox */
+    .custom-checkbox {
+      position: absolute;
+      top: 3px;
+      left: -20px;
+      height: 16px;
+      width: 16px;
+      background: url('../../images/checkbox/icons/unchecked/normal.svg');
+    }
+
+    /* On mouse-over, add a grey background color */
+    &:hover input ~ .custom-checkbox {
+      background: url('../../images/checkbox/icons/unchecked/hover.svg');
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    input:checked ~ .custom-checkbox {
+      background: url('../../images/checkbox/icons/checked/normal.svg');
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .custom-checkbox:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the checkmark when checked */
+    input:checked ~ .custom-checkbox:after {
+      display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .custom-checkbox:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
     }
   }
 }

@@ -103,7 +103,7 @@ img{
 }
 
 .main-content{
-  padding: 4% 3%;
+  padding: 2% 3%;
   width: 100%;
   background: #fff;
   margin-right: 10px;
@@ -131,22 +131,63 @@ img{
   font-weight: 600;
 }
 
-.form__buttons{
-  margin: 20px 0;
-}
-
 .btn{
   padding: 8px 16px;
   background: #4488FF;
   color:rgba(255,255,255,0.9);
   border:none;
   border-radius: 2px;
-  &:hover{
+  margin: 0 10px 10px 0;
+  &:hover, &:focus{
     color:rgba(255,255,255,0.9);
     background: #69A0F6;
     cursor: pointer;
   }
   &:active{
     background:#3D7AE6;
+  }
+  &:disabled{
+    border: 1px solid rgba(0,0,0,0.16);
+    background: none;
+    color: rgba(0,0,0,0.32);
+    &:hover{
+      cursor: default;
+    }
+  }
+  &_pseudo{
+    color:rgba(0,0,0,0.9);
+    background: none;
+    &:hover, &:focus, &:active{
+      color: #4488ff;
+      background: none;
+    }
+    &:disabled{
+      background: none;
+      color: rgba(0,0,0,0.32);
+      &:hover{
+        cursor: default;
+      }
+    }
+  }
+}
+
+.form__buttons{
+  &__description{
+    padding-left: 20px;
+    margin: 20px 0;
+    .form__label{
+      margin-bottom: 0;
+      &__title{
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+    input[type="checkbox"]{
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
   }
 }

@@ -5,9 +5,40 @@ h1{
     color:rgba(0,0,0,0.9);
 }
 
-h3{
+h2{
     font-size: 20px;
     line-height: 32px;
     font-weight: 400;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;       /* Remove default arrow */
+    background-image: url('../images/down-semibold_icon.svg');   /* Add custom arrow */
+    background-repeat: no-repeat;
+    background-position: 99% center;
+}
+
+input,select {
+     border-radius: 2px;
+     border: 1px solid rgba(0, 0, 0, 0.32);
+     padding: 5px 10px;
+     font-size: 14px;
+     line-height: 22px;
+     width: calc(100% - 20px);
+ }
+
+select{
+    padding: 5px 20px 5px 10px;
+}
+
+a{
+    color: #4488ff;
+}
+
+a:hover{
+    color: #3d7ae6;
+    text-decoration: none;
 }
 
