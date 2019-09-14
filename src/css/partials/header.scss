@@ -1,0 +1,85 @@
+.header{
+  height: 56px;
+  background: #284159;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  &__profile{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+
+    .header__profile__avatar{
+      margin: 0 10px;
+      .avatar__wrapper{
+        width: 32px;
+        height: 32px;
+      }
+    }
+    &__user-info {
+      .user-info__title {
+        color: #fff;
+        font-size:14px;
+        line-height: 20px;
+      }
+      .user-info__description{
+        font-size: 12px;
+        color: rgba(255,255,255,0.64);
+      }
+    }
+    &:before{
+      content:'';
+      position:absolute;
+      width: 16px;
+      height: 16px;
+      background: url('../../images/down-semibold_icon.svg') no-repeat;
+      top: 50%;
+      margin-top: -8px;
+      right:-20px;
+    }
+    &:hover{
+      cursor:pointer;
+      .dropdown-menu{
+        display: block;
+        z-index: 1;
+        height: auto;
+      }
+    }
+  }
+  &__logo{
+
+  }
+}
+
+
+.dropdown-menu{
+  position: absolute;
+  right: 0;
+  width: 264px;
+  padding: 8px 24px;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,0.16), 0 2px 8px 0 rgba(0,0,0,0.16);
+  border-radius: 2px;
+  background: #fff;
+  display: none;
+  &__header{
+    color:rgba(0,0,0,0.32);
+    font-size:12px;
+    line-height:22px;
+    margin: 5px 0;
+  }
+  &__items{
+
+  }
+  &__footer{
+    font-size:14px;
+    border-top:1px solid rgba(0,0,0,0.16);
+    margin-top: 8px;
+    padding-top: 8px;
+  }
+}
+
+
+
+

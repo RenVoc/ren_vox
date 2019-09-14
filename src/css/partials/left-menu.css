@@ -1,0 +1,25 @@
+.left-menu {
+  background: #284159;
+  min-width: 256px; }
+  .left-menu__separator {
+    height: 16px;
+    margin: 0 15%;
+    border-top: 1px solid rgba(255, 255, 255, 0.12); }
+  .left-menu__wrapper {
+    margin-bottom: 16px;
+    padding: 0 15% 0 0; }
+    .left-menu__wrapper:last-child {
+      border-bottom: none; }
+    .left-menu__wrapper__title {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 12px;
+      text-transform: uppercase;
+      position: relative;
+      padding-left: 18%;
+      margin: 8px 0; }
+    .left-menu__wrapper .block-links__item {
+      padding-left: 18%; }
+      .left-menu__wrapper .block-links__item:hover {
+        background: #4488ff; }
+
+/*# sourceMappingURL=left-menu.css.map */

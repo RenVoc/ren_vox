@@ -1,0 +1,152 @@
+/*
+* Third Party
+*/
+@import "../../bower_components/normalize.css/normalize.css";
+
+/*
+* Custom
+*/
+@import "standart.css";
+@import "partials/forms.css";
+@import "partials/header.css";
+@import "partials/left-menu.css";
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font: 14px/22px 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(0,0,0,0.9);
+  min-width: 1200px;
+  background: #ffffff; }
+
+.root-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #284159;
+  position: relative;
+}
+
+h1,h2,h3,p{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  font-size: 14px;
+  line-height: 20px;
+}
+
+img{
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.menu-items{
+  display: flex;
+  flex-direction: column;
+  &__item{
+    display: block;
+    color:rgba(0,0,0,0.9);
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.flex-container{
+  display: flex;
+  &_row{
+    flex-direction: row;
+  }
+  &_column{
+    flex-direction: column;
+  }
+  &_vc{
+    align-items: center;
+  }
+  &_wrap{
+    flex-wrap: wrap;
+  }
+}
+
+.main-flex{
+  height: calc(100vh - 53px);
+}
+
+.block-links{
+  &__item{
+    display: block;
+    color:rgba(255,255,255,0.9);
+    font-size:12px;
+    border-radius: 0 2px 2px 0;
+    line-height: 20px;
+    padding: 6px 0;
+    text-decoration: none;
+    position:relative;
+  }
+}
+
+.menu-icon{
+  position: absolute;
+  left:18px;
+  top: -2px;
+}
+
+.main-content{
+  padding: 4% 3%;
+  width: 100%;
+  background: #fff;
+  margin-right: 10px;
+  border-radius: 2px;
+  min-width: 1020px;
+}
+
+.margin20{
+  margin: 20px 0;
+}
+
+.avatar{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  &__wrapper{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+}
+
+.fw-bold{
+  font-weight: 600;
+}
+
+.form__buttons{
+  margin: 20px 0;
+}
+
+.btn{
+  padding: 8px 16px;
+  background: #4488FF;
+  color:rgba(255,255,255,0.9);
+  border:none;
+  border-radius: 2px;
+  &:hover{
+    color:rgba(255,255,255,0.9);
+    background: #69A0F6;
+    cursor: pointer;
+  }
+  &:active{
+    background:#3D7AE6;
+  }
+}
