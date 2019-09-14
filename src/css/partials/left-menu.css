@@ -1,6 +1,11 @@
 .left-menu {
   background: #284159;
-  min-width: 256px; }
+  width: 256px;
+  position: fixed;
+  z-index: 1;
+  overflow-y: scroll;
+  height: calc(100% - 53px);
+  left: 0; }
   .left-menu__separator {
     height: 16px;
     margin: 0 15%;
@@ -22,5 +27,8 @@
       .left-menu__wrapper .block-links__item:hover {
         background: #4488ff;
         color: rgba(255, 255, 255, 0.9); }
+
+.left-menu::-webkit-scrollbar {
+  width: 0 !important; }
 
 /*# sourceMappingURL=left-menu.css.map */

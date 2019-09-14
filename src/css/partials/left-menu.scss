@@ -1,6 +1,11 @@
 .left-menu{
   background: #284159;
-  min-width: 256px;
+  width: 256px;
+  position: fixed;
+  z-index: 1;
+  overflow-y: scroll;
+  height: calc(100% - 53px);
+  left: 0;
   &__separator{
     height: 16px;
     margin: 0 15%;
@@ -31,3 +36,5 @@
     }
   }
 }
+
+.left-menu::-webkit-scrollbar { width: 0 !important; }

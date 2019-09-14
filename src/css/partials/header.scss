@@ -6,6 +6,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 32px;
+  position: fixed;
+  width: calc(100% - 64px);
+  z-index: 1;
   &__profile{
     display: flex;
     flex-direction: row;

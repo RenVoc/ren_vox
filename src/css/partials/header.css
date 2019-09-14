@@ -5,7 +5,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px; }
+  padding: 0 32px;
+  position: fixed;
+  width: calc(100% - 64px);
+  z-index: 1; }
   .header__profile {
     display: flex;
     flex-direction: row;
