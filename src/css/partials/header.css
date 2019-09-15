@@ -1,3 +1,11 @@
+/*Colors*/
+.user-info .user-info__title {
+  color: rgba(0, 0, 0, 0.9);
+  margin: 0; }
+.user-info .user-info__description {
+  color: rgba(0, 0, 0, 0.9);
+  margin: 0; }
+
 .header {
   height: 56px;
   background: #284159;
@@ -25,7 +33,7 @@
       font-weight: 400; }
     .header__profile__user-info .user-info__description {
       font-size: 12px;
-      color: rgba(255, 255, 255, 0.64); }
+      color: rgba(255, 255, 255, 0.9); }
     .header__profile:before {
       content: '';
       position: absolute;

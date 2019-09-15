@@ -1,49 +1,86 @@
+/* Colors */
 .form__label {
-  width: 40%;
+  min-width: 21%;
   margin: 0 40px 20px 0;
   position: relative;
   display: block;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-  /* Create a custom checkbox */
-  /* On mouse-over, add a grey background color */
-  /* When the checkbox is checked, add a blue background */
-  /* Create the checkmark/indicator (hidden when not checked) */
-  /* Show the checkmark when checked */
-  /* Style the checkmark/indicator */ }
+  user-select: none; }
+  .form__label_checkox:hover {
+    color: #4488FF; }
   .form__label__title {
     font-size: 12px;
-    line-height: 20px; }
-  .form__label .custom-checkbox {
+    line-height: 20px;
+    margin: 0; }
+  .form__label_wa {
+    width: auto;
+    margin: 0 40px 0 0; }
+  .form__label_disabled {
+    color: rgba(0, 0, 0, 0.32); }
+    .form__label_disabled:hover {
+      color: rgba(0, 0, 0, 0.32); }
+    .form__label_disabled .custom-checkbox {
+      background: url("../../images/checkbox/icons/unchecked/disabled.svg"); }
+    .form__label_disabled:hover input ~ .custom-checkbox {
+      background: url("../../images/checkbox/icons/unchecked/disabled.svg"); }
+    .form__label_disabled:hover input:checked ~ .custom-checkbox {
+      background: url("../../images/checkbox/icons/checked/disabled.svg"); }
+    .form__label_disabled input:checked ~ .custom-checkbox {
+      background: url("../../images/checkbox/icons/checked/disabled.svg"); }
+  .form__label input:invalid:not(:placeholder-shown) {
+    border-color: #F15866; }
+  .form__label label.error {
     position: absolute;
-    top: 3px;
-    left: -20px;
-    height: 16px;
-    width: 16px;
-    background: url("../../images/checkbox/icons/unchecked/normal.svg"); }
-  .form__label:hover input ~ .custom-checkbox {
-    background: url("../../images/checkbox/icons/unchecked/hover.svg"); }
-  .form__label input:checked ~ .custom-checkbox {
-    background: url("../../images/checkbox/icons/checked/normal.svg"); }
-  .form__label .custom-checkbox:after {
-    content: "";
-    position: absolute;
-    display: none; }
-  .form__label input:checked ~ .custom-checkbox:after {
-    display: block; }
-  .form__label .custom-checkbox:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg); }
+    font-size: 10px;
+    bottom: -20px;
+    color: #F15866; }
+  .form__label_error {
+    color: #F15866; }
+    .form__label_error select, .form__label_error input {
+      border-color: #F15866; }
+    .form__label_error .form__label__title {
+      color: #F15866; }
+    .form__label_error:hover {
+      color: #F15866; }
+    .form__label_error .custom-checkbox {
+      background: url("../../images/checkbox/icons/invalid/unchecked/normal.svg"); }
+    .form__label_error:hover input ~ .custom-checkbox {
+      background: url("../../images/checkbox/icons/invalid/unchecked/normal.svg"); }
+    .form__label_error:hover input:checked ~ .custom-checkbox {
+      background: url("../../images/checkbox/icons/invalid/checked.svg"); }
+    .form__label_error input:checked ~ .custom-checkbox {
+      background: url("../../images/checkbox/icons/invalid/checked.svg"); }
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+.custom-checkbox {
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  height: 16px;
+  width: 16px;
+  background: url("../../images/checkbox/icons/unchecked/normal.svg"); }
+
+label:hover input ~ .custom-checkbox {
+  background: url("../../images/checkbox/icons/unchecked/hover.svg"); }
+
+label:hover input:checked ~ .custom-checkbox {
+  background: url("../../images/checkbox/icons/checked/hover.svg"); }
+
+input:checked ~ .custom-checkbox {
+  background: url("../../images/checkbox/icons/checked/normal.svg"); }
+
+.custom-checkbox:after {
+  content: "";
+  position: absolute;
+  display: none; }
 
 /*# sourceMappingURL=forms.css.map */

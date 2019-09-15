@@ -1,15 +1,28 @@
-/*
-* Third Party
-*/
+/* Third Party */
 @import "../../bower_components/normalize.css/normalize.css";
 
-/*
-* Custom
-*/
-@import "standart.css";
+/*  Custom */
+@import "partials/standart.css";
 @import "partials/forms.css";
 @import "partials/header.css";
 @import "partials/left-menu.css";
+@import "partials/uikit.css";
+@import "partials/adaptive.css";
+
+/*Colors*/
+$main-font-color: rgba(0,0,0,0.9);
+$invert-font-color: rgba(255,255,255,0.9);
+$panel-color: #284159;
+$highlight1: #4488FF;
+$highlight2: #3D7AE6;
+$highlight3: #69A0F6;
+$error-color: #F15866;
+$grey-color: #ababab;
+$border-color: rgba(0,0,0,0.16);
+$hinted: rgba(0,0,0,0.32);
+$white-color:#fff;
+$black-light-color: rgba(0,0,0,0.04);
+
 
 html, body {
   height: 100%;
@@ -19,9 +32,9 @@ html, body {
   position: relative;
   font: 14px/22px 'Open Sans', sans-serif;
   font-weight: 400;
-  color: rgba(0,0,0,0.9);
-  min-width: 1200px;
-  background: #ffffff; }
+  color: $main-font-color;
+  min-width: 1279px;
+  background: $white-color; }
 body::-webkit-scrollbar { width: 0 !important; }
 
 .root-wrapper{
@@ -33,13 +46,20 @@ body::-webkit-scrollbar { width: 0 !important; }
 }
 
 h1,h2,h3,p{
-  margin: 0;
   padding: 0;
+}
+
+h1,h2,h3,p{
+  margin: 20px 0;
 }
 
 p{
   font-size: 14px;
   line-height: 20px;
+}
+
+.error~p{
+  color: $error-color;
 }
 
 img{
@@ -52,7 +72,7 @@ img{
   flex-direction: column;
   &__item{
     display: block;
-    color:rgba(0,0,0,0.9);
+    color:$main-font-color;
     font-size: 14px;
     line-height: 20px;
     text-decoration: none;
@@ -74,6 +94,9 @@ img{
   &_vc{
     align-items: center;
   }
+  &_hz{
+    justify-content: center;
+  }
   &_wrap{
     flex-wrap: wrap;
   }
@@ -83,14 +106,14 @@ img{
   margin-top:56px;
   position: relative;
   margin-left: 256px;
-  background: #284159;
+  background: $panel-color;
   height: 100%;
 }
 
 .block-links{
   &__item{
     display: block;
-    color:rgba(255,255,255,0.9);
+    color:$invert-font-color;
     font-size:12px;
     border-radius: 0 2px 2px 0;
     line-height: 20px;
@@ -109,10 +132,10 @@ img{
 .main-content{
   padding: 2% 3% 2%;
   width: 100%;
-  background: #fff;
+  background: $white-color;
   margin-right: 10px;
   border-radius: 2px;
-  min-width: 1020px;
+  min-width: 900px;
   overflow-y: scroll;
 }
 
@@ -120,6 +143,10 @@ img{
 
 .margin20{
   margin: 20px 0;
+}
+
+.margin10{
+  margin: 10px 0;
 }
 
 .avatar{
@@ -140,37 +167,37 @@ img{
 
 .btn{
   padding: 8px 16px;
-  background: #4488FF;
-  color:rgba(255,255,255,0.9);
+  background: $highlight1;
+  color:$invert-font-color;
   border:none;
   border-radius: 2px;
   margin: 0 10px 10px 0;
   &:hover, &:focus{
-    color:rgba(255,255,255,0.9);
-    background: #69A0F6;
+    color:$invert-font-color;
+    background: $highlight3;
     cursor: pointer;
   }
   &:active{
-    background:#3D7AE6;
+    background:$highlight2;
   }
   &:disabled{
-    border: 1px solid rgba(0,0,0,0.16);
+    border: 1px solid $border-color;
     background: none;
-    color: rgba(0,0,0,0.32);
+    color: $hinted;
     &:hover{
       cursor: default;
     }
   }
   &_pseudo{
-    color:rgba(0,0,0,0.9);
+    color:$main-font-color;
     background: none;
     &:hover, &:focus, &:active{
-      color: #4488ff;
+      color: $highlight1;
       background: none;
     }
     &:disabled{
       background: none;
-      color: rgba(0,0,0,0.32);
+      color: $hinted;
       &:hover{
         cursor: default;
       }
@@ -189,12 +216,14 @@ img{
         line-height: 22px;
       }
     }
-    input[type="checkbox"]{
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-      height: 0;
-      width: 0;
-    }
+
   }
+}
+
+.header-content{
+  border-bottom:1px solid $border-color;
+}
+
+.color-gray{
+  color:$grey-color;
 }

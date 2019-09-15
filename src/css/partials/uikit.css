@@ -1,0 +1,52 @@
+/* Colors */
+.ui-color-item {
+  width: 30%;
+  margin: 0 33px 33px 0; }
+  .ui-color-item__squad {
+    width: 64px;
+    height: 64px;
+    border-radius: 2px;
+    margin-right: 16px; }
+
+.bg-main {
+  background: rgba(0, 0, 0, 0.9); }
+
+.bg-fc {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 2px; }
+
+.bg-panel {
+  background: #284159; }
+
+.bg-highlight {
+  background: #4488FF; }
+
+.bg-highlight2 {
+  background: #3D7AE6; }
+
+.bg-highlight3 {
+  background: #69A0F6; }
+
+.bg-error {
+  background: #F15866; }
+
+.bg-grey {
+  background: #ababab; }
+
+.bg-border {
+  background: rgba(0, 0, 0, 0.16); }
+
+.bg-hinted {
+  background: rgba(0, 0, 0, 0.32); }
+
+.bg-blacklight {
+  background: rgba(0, 0, 0, 0.04); }
+
+.ui-buttons__item {
+  margin: 0 0 20px 0; }
+  .ui-buttons__item__column {
+    min-width: 110px;
+    margin: 0 20px 0 0; }
+
+/*# sourceMappingURL=uikit.css.map */

@@ -1,63 +1,130 @@
-.form {
-  &__label {
-    width: 40%;
-    margin: 0 40px 20px 0;
-    position: relative;
-    display: block;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    &__title {
-      font-size: 12px;
-      line-height: 20px;
-    }
+/* Colors */
+$main-font-color: rgba(0,0,0,0.9);
+$invert-font-color: rgba(255,255,255,0.9);
+$panel-color: #284159;
+$highlight1: #4488FF;
+$highlight2: #3D7AE6;
+$highlight3: #69A0F6;
+$error-color: #F15866;
+$grey-color: #ababab;
+$border-color: rgba(0,0,0,0.16);
+$hinted: rgba(0,0,0,0.32);
+$white-color:#fff;
+$black-light-color: rgba(0,0,0,0.04);
 
-    /* Create a custom checkbox */
-    .custom-checkbox {
-      position: absolute;
-      top: 3px;
-      left: -20px;
-      height: 16px;
-      width: 16px;
-      background: url('../../images/checkbox/icons/unchecked/normal.svg');
+.form__label {
+  min-width: 21%;
+  margin: 0 40px 20px 0;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &_checkox:hover{
+    color: $highlight1;
+  }
+  &__title {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+  }
+  &_wa{
+    width: auto;
+    margin: 0 40px 0 0;
+  }
+  &_disabled{
+    color: $hinted;
+    &:hover{
+      color: $hinted;
     }
-
-    /* On mouse-over, add a grey background color */
+    .custom-checkbox{
+      background: url('../../images/checkbox/icons/unchecked/disabled.svg');
+    }
     &:hover input ~ .custom-checkbox {
-      background: url('../../images/checkbox/icons/unchecked/hover.svg');
+      background: url('../../images/checkbox/icons/unchecked/disabled.svg');
     }
-
-    /* When the checkbox is checked, add a blue background */
+    &:hover input:checked ~ .custom-checkbox {
+      background: url('../../images/checkbox/icons/checked/disabled.svg');
+    }
     input:checked ~ .custom-checkbox {
-      background: url('../../images/checkbox/icons/checked/normal.svg');
-    }
-
-    /* Create the checkmark/indicator (hidden when not checked) */
-    .custom-checkbox:after {
-      content: "";
-      position: absolute;
-      display: none;
-    }
-
-    /* Show the checkmark when checked */
-    input:checked ~ .custom-checkbox:after {
-      display: block;
-    }
-
-    /* Style the checkmark/indicator */
-    .custom-checkbox:after {
-      left: 9px;
-      top: 5px;
-      width: 5px;
-      height: 10px;
-      border: solid white;
-      border-width: 0 3px 3px 0;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
+      background: url('../../images/checkbox/icons/checked/disabled.svg');
     }
   }
+
+  input:invalid:not(:placeholder-shown){
+    border-color: $error-color;
+  }
+
+  label.error{
+    position: absolute;
+    font-size: 10px;
+    bottom: -20px;
+    color: $error-color;
+  }
+
+
+
+  &_error{
+    color: $error-color;
+    select, input{
+      border-color: $error-color;
+    }
+    .form__label__title{
+      color: $error-color;
+    }
+    &:hover{
+      color: $error-color;
+    }
+    .custom-checkbox{
+      background: url('../../images/checkbox/icons/invalid/unchecked/normal.svg');
+    }
+    &:hover input ~ .custom-checkbox {
+      background: url('../../images/checkbox/icons/invalid/unchecked/normal.svg');
+    }
+    &:hover input:checked ~ .custom-checkbox {
+      background: url('../../images/checkbox/icons/invalid/checked.svg');
+    }
+    input:checked ~ .custom-checkbox {
+      background: url('../../images/checkbox/icons/invalid/checked.svg');
+    }
+  }
+}
+
+
+
+input[type="checkbox"]{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox {
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  height: 16px;
+  width: 16px;
+  background: url('../../images/checkbox/icons/unchecked/normal.svg');
+}
+
+label:hover input ~ .custom-checkbox {
+  background: url('../../images/checkbox/icons/unchecked/hover.svg');
+}
+
+label:hover input:checked ~ .custom-checkbox {
+  background: url('../../images/checkbox/icons/checked/hover.svg');
+}
+
+input:checked ~ .custom-checkbox {
+  background: url('../../images/checkbox/icons/checked/normal.svg');
+}
+
+.custom-checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
 }

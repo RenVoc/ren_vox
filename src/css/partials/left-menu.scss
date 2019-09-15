@@ -1,5 +1,19 @@
+/*Colors*/
+$main-font-color: rgba(0,0,0,0.9);
+$invert-font-color: rgba(255,255,255,0.9);
+$panel-color: #284159;
+$highlight1: #4488FF;
+$highlight2: #3D7AE6;
+$highlight3: #69A0F6;
+$error-color: #F15866;
+$grey-color: #ababab;
+$border-color: rgba(0,0,0,0.16);
+$hinted: rgba(0,0,0,0.32);
+$white-color:#fff;
+$black-light-color: rgba(0,0,0,0.04);
+
 .left-menu{
-  background: #284159;
+  background: $panel-color;
   width: 256px;
   position: fixed;
   z-index: 1;
@@ -9,7 +23,7 @@
   &__separator{
     height: 16px;
     margin: 0 15%;
-    border-top: 1px solid rgba(255,255,255,0.12);
+    border-top: 1px solid $grey-color;
   }
   &__wrapper{
     margin-bottom: 16px;
@@ -18,7 +32,7 @@
       border-bottom: none;
     }
     &__title{
-      color:rgba(255,255,255,0.9);
+      color:$invert-font-color;
       font-size: 12px;
       text-transform: uppercase;
       position:relative;
@@ -29,8 +43,8 @@
       &__item{
         padding-left: 18%;
         &:hover{
-          background: #4488ff;
-          color:rgba(255,255,255,0.9);
+          background: $highlight1;
+          color:$invert-font-color;
         }
       }
     }

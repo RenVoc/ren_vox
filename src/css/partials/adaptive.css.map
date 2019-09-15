@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,kCAAkC;EAChC,YAAa;IACX,SAAS,EAAE,GAAG;AAIlB,kCAAkC;EAChC,YAAa;IACX,KAAK,EAAE,GAAG",
+"sources": ["adaptive.scss"],
+"names": [],
+"file": "adaptive.css"
+}

@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
-
 </head>
 <body>
     <main class="root-wrapper">
@@ -29,28 +29,28 @@
         </a>
     </div>
     <div class="header__profile">
-            <div class="header__profile__avatar avatar">
-                <div class="avatar__wrapper">
-                    <img src="images/64.jpg" alt="">
-                </div>
+        <div class="header__profile__avatar avatar">
+            <div class="avatar__wrapper">
+                <img src="images/64.jpg" alt="">
             </div>
-            <div class="header__profile__user-info user-info">
-                <h3 class="user-info__title">Jhon</h3>
-                <p class="user-info__description">Wrike Team</p>
-                <nav class="dropdown-menu">
-                    <header class="dropdown-menu__header">Wrike Team</header>
-                    <section class="dropdown-menu__items menu-items">
-                        <a href="#" class="menu-items__item">Profile Settings</a>
-                        <a href="#" class="menu-items__item">Team directory</a>
-                        <a href="#" class="menu-items__item">Apps & Integrations</a>
-                        <a href="#" class="menu-items__item">Mobile apps</a>
-                        <a href="#" class="menu-items__item">Help</a>
-                    </section>
-                    <footer class="dropdown-menu__footer menu-items">
-                        <a href="#" class="menu-items__item">Log Out</a>
-                    </footer>
-                </nav>
-            </div>
+        </div>
+        <div class="header__profile__user-info user-info">
+            <h3 class="user-info__title">Jhon</h3>
+            <p class="user-info__description">Wrike Team</p>
+            <nav class="dropdown-menu">
+                <header class="dropdown-menu__header">Wrike Team</header>
+                <section class="dropdown-menu__items menu-items">
+                    <a href="#" class="menu-items__item">Profile Settings</a>
+                    <a href="#" class="menu-items__item">Team directory</a>
+                    <a href="#" class="menu-items__item">Apps & Integrations</a>
+                    <a href="#" class="menu-items__item">Mobile apps</a>
+                    <a href="#" class="menu-items__item">Help</a>
+                </section>
+                <footer class="dropdown-menu__footer menu-items">
+                    <a href="#" class="menu-items__item">Log Out</a>
+                </footer>
+            </nav>
+        </div>
     </div>
 </header>
         <section class="flex-container flex-container_row main-flex">
@@ -107,36 +107,36 @@
     </div>
 </section>
 
-<form action="" class="form margin20">
+<form action="" class="form margin20" id="profile-form">
     <div class="flex-container flex-container_row flex-container_wrap">
         <label for="fname" class="form__label">
             <p class="form__label__title">First name</p>
-            <input type="text" name="fname" id="fname" class="form__label__input">
+            <input type="text" name="fname" id="fname" class="form__label__input" required>
         </label>
         <label for="lname" class="form__label">
             <p class="form__label__title">Last name</p>
-            <input type="text" name="lname" id="lname" class="form__label__input">
+            <input type="text" name="lname" id="lname" class="form__label__input" required>
         </label>
         <label for="cname" class="form__label">
             <p class="form__label__title">Company name</p>
-            <input type="text" name="cname" id="cname" class="form__label__input">
+            <input type="text" name="cname" id="cname" class="form__label__input" required>
         </label>
         <label for="jobtitle" class="form__label">
             <p class="form__label__title">Job title</p>
-            <input type="text" name="jobtitle" id="jobtitle" class="form__label__input">
+            <input type="text" name="jobtitle" id="jobtitle" class="form__label__input" required>
         </label>
         <label for="location" class="form__label">
             <p class="form__label__title">Location</p>
-            <input type="text" name="location" id="location" class="form__label__input">
+            <input type="text" name="location" id="location" class="form__label__input" required>
         </label>
         <label for="pnumber" class="form__label">
             <p class="form__label__title">Phone number</p>
-            <input type="text" name="pnumber" id="pnumber" class="form__label__input">
+            <input type="text" name="pnumber" id="pnumber" class="form__label__input" required>
         </label>
     </div>
     <div class="form__buttons margin20">
         <button class="btn">Save changes</button><!--
-     --><a class="btn btn_pseudo">Cancel</a>
+     --><button class="btn btn_pseudo">Cancel</button>
     </div>
 </form>
 

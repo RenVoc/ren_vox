@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    var $select1 = $('#tzone');
+
+$(document).ready(function(){var $select1 = $('#tzone');
     $.ajax({
         url: '../tzon.json',
         dataType: 'JSON',
@@ -27,4 +27,13 @@ $(document).ready(function(){
             alert("JSON ERROR");
         }
     });
-})
+
+    $('#profile-form').validate();
+
+    $('.form__label').each(function(){
+        if($(this).find('.form__label__input').hasClass('error') == true) {
+            $(this).parent().find('.form__label__title').addClass('error');
+        }
+    });
+
+});

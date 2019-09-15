@@ -1,0 +1,70 @@
+/* Colors */
+$main-font-color: rgba(0,0,0,0.9);
+$invert-font-color: rgba(255,255,255,0.9);
+$panel-color: #284159;
+$highlight1: #4488FF;
+$highlight2: #3D7AE6;
+$highlight3: #69A0F6;
+$error-color: #F15866;
+$grey-color: #ababab;
+$border-color: rgba(0,0,0,0.16);
+$hinted: rgba(0,0,0,0.32);
+$white-color:#fff;
+$black-light-color: rgba(0,0,0,0.04);
+
+.ui-color-item{
+  width: 30%;
+  margin: 0 33px 33px 0;
+  &__squad{
+    width: 64px;
+    height: 64px;
+    border-radius: 2px;
+    margin-right: 16px;
+  }
+}
+
+.bg-main{
+  background: $main-font-color;
+}
+.bg-fc{
+  background: $invert-font-color;
+  border:1px solid $border-color;
+  border-radius: 2px;
+}
+.bg-panel{
+  background: $panel-color;
+}
+.bg-highlight{
+  background: $highlight1;
+}
+.bg-highlight2{
+  background: $highlight2;
+}
+.bg-highlight3{
+  background: $highlight3;
+}
+.bg-error{
+  background: $error-color;
+}
+.bg-grey{
+  background: $grey-color;
+}
+.bg-border{
+  background: $border-color;
+}
+.bg-hinted{
+  background: $hinted;
+}
+.bg-blacklight {
+  background: $black-light-color;
+}
+
+.ui-buttons{
+  &__item{
+    margin:0 0 20px 0;
+    &__column{
+      min-width: 110px;
+      margin:0 20px 0 0;
+    }
+  }
+}

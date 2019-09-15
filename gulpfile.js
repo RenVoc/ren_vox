@@ -85,9 +85,16 @@ gulp.task('build', [
 ]);
 
 gulp.task('watch', function(){
-    watch([path.watch.html], function(event, cb) {
-        gulp.start('html:build');
+
+    gulp.watch('src/**/*.html').on('change', browserSync.reload);
+    browserSync.init({
+        files: ['src/index.html','src/UI.html'],
+        server:{
+            baseDir:'./build',
+            directory: true
+        }
     });
+
     watch([path.watch.style], function(event, cb) {
         gulp.start('style:build');
     });

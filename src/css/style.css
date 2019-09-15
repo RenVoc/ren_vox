@@ -1,14 +1,13 @@
-/*
-* Third Party
-*/
+/* Third Party */
 @import url(../../bower_components/normalize.css/normalize.css);
-/*
-* Custom
-*/
-@import url(standart.css);
+/*  Custom */
+@import url(partials/standart.css);
 @import url(partials/forms.css);
 @import url(partials/header.css);
 @import url(partials/left-menu.css);
+@import url(partials/uikit.css);
+@import url(partials/adaptive.css);
+/*Colors*/
 html, body {
   height: 100%;
   width: 100%;
@@ -18,8 +17,8 @@ html, body {
   font: 14px/22px 'Open Sans', sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.9);
-  min-width: 1200px;
-  background: #ffffff; }
+  min-width: 1279px;
+  background: #fff; }
 
 body::-webkit-scrollbar {
   width: 0 !important; }
@@ -32,12 +31,17 @@ body::-webkit-scrollbar {
   position: relative; }
 
 h1, h2, h3, p {
-  margin: 0;
   padding: 0; }
+
+h1, h2, h3, p {
+  margin: 20px 0; }
 
 p {
   font-size: 14px;
   line-height: 20px; }
+
+.error ~ p {
+  color: #F15866; }
 
 img {
   vertical-align: middle;
@@ -64,6 +68,8 @@ img {
     flex-direction: column; }
   .flex-container_vc {
     align-items: center; }
+  .flex-container_hz {
+    justify-content: center; }
   .flex-container_wrap {
     flex-wrap: wrap; }
 
@@ -95,7 +101,7 @@ img {
   background: #fff;
   margin-right: 10px;
   border-radius: 2px;
-  min-width: 1020px;
+  min-width: 900px;
   overflow-y: scroll; }
 
 .main-content::-webkit-scrollbar {
@@ -103,6 +109,9 @@ img {
 
 .margin20 {
   margin: 20px 0; }
+
+.margin10 {
+  margin: 10px 0; }
 
 .avatar {
   display: flex;
@@ -140,7 +149,7 @@ img {
     color: rgba(0, 0, 0, 0.9);
     background: none; }
     .btn_pseudo:hover, .btn_pseudo:focus, .btn_pseudo:active {
-      color: #4488ff;
+      color: #4488FF;
       background: none; }
     .btn_pseudo:disabled {
       background: none;
@@ -156,11 +165,11 @@ img {
     .form__buttons__description .form__label__title {
       font-size: 14px;
       line-height: 22px; }
-  .form__buttons__description input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0; }
+
+.header-content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16); }
+
+.color-gray {
+  color: #ababab; }
 
 /*# sourceMappingURL=style.css.map */
