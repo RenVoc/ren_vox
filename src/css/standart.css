@@ -14,7 +14,8 @@ h2{
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;       /* Remove default arrow */
+    -ms-appearance: none;
+    appearance: none!important;
     background-image: url('../images/svg/down-semibold_icon.svg');   /* Add custom arrow */
     background-repeat: no-repeat;
     background-position: 99% center;

@@ -146,6 +146,10 @@ img{
   }
 }
 
+select::-ms-expand {
+  display: none;
+}
+
 .fw-bold{
   font-weight: 600;
 }

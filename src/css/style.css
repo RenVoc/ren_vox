@@ -115,6 +115,9 @@ img {
     overflow: hidden;
     border-radius: 50%; }
 
+select::-ms-expand {
+  display: none; }
+
 .fw-bold {
   font-weight: 600; }
 
