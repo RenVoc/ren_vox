@@ -1,5 +1,18 @@
+
+@media all and (max-width: 1500px){
+  .form__label {
+    flex-basis:20%;
+  }
+}
+
+@media all and (max-width: 1400px){
+  .form__label {
+    flex-basis:27%;
+  }
+}
+
 @media all and (max-width: 1300px){
   .form__label {
-    width: 40%;
+    flex-basis:40%;
   }
 }

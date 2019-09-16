@@ -17,13 +17,15 @@
       .header__profile .header__profile__avatar .avatar__wrapper {
         width: 32px;
         height: 32px; }
-    .header__profile__user-info .user-info__title {
-      color: #fff;
-      font-size: 14px;
-      line-height: 20px;
-      font-weight: 400; }
-    .header__profile__user-info .user-info__description {
-      color: rgba(255, 255, 255, 0.64); }
+    .header__profile__user-info {
+      line-height: 13px; }
+      .header__profile__user-info .user-info__title {
+        color: #fff;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400; }
+      .header__profile__user-info .user-info__description {
+        color: rgba(255, 255, 255, 0.64); }
     .header__profile:hover {
       cursor: pointer; }
       .header__profile:hover .dropdown-menu {
