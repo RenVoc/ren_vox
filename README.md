@@ -10,7 +10,7 @@
 
 ***
 
-* [Ссылка на демо-страницу] (http://iolovyannikov.net)
+* https://ren.empty.one/
 
 ***
 

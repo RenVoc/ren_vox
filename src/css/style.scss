@@ -45,10 +45,6 @@ p{
   line-height: 20px;
 }
 
-.error~p{
-  color: $error-color;
-}
-
 img{
   vertical-align: middle;
   max-width: 100%;
@@ -101,6 +97,8 @@ img{
   }
 }
 
+
+
 .menu-icon{
   position: absolute;
   left:10px;
@@ -135,6 +133,32 @@ img{
   color:$main-font-color;
 }
 
+.profile__avatar{
+  &__wrapper{
+    &:before{
+      content:'upload';
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      background: $hinted;
+      color: $invert-font-color;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 12px;
+      display: none;
+    }
+    &:hover{
+      &:before{
+        display: flex;
+      }
+    }
+  }
+}
+
 .avatar{
   display: flex;
   align-items: center;
@@ -144,6 +168,7 @@ img{
     height: 80px;
     overflow: hidden;
     border-radius: 50%;
+    position: relative;
   }
 }
 
