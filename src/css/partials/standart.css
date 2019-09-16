@@ -17,13 +17,8 @@ h3{
   font-weight: 400;
 }
 
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url('../../images/down-semibold_icon.svg');
-  background-repeat: no-repeat;
-  background-position: 99% center;
+input{
+  width: calc(100% - 20px);
 }
 
 input,select {
@@ -32,7 +27,6 @@ input,select {
   padding: 5px 10px;
   font-size: 14px;
   line-height: 22px;
-  width: calc(100% - 20px);
 }
 
 input:focus, select:focus{
@@ -41,8 +35,14 @@ input:focus, select:focus{
 }
 
 select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('../../images/down-semibold_icon.svg');
+  background-repeat: no-repeat;
+  background-position: 99% center;
   padding: 5px 20px 5px 10px;
-  width: 100%;
+  width:100%;
 }
 
 a{

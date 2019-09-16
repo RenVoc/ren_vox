@@ -1,19 +1,7 @@
-/* Colors */
-$main-font-color: rgba(0,0,0,0.9);
-$invert-font-color: rgba(255,255,255,0.9);
-$panel-color: #284159;
-$highlight1: #4488FF;
-$highlight2: #3D7AE6;
-$highlight3: #69A0F6;
-$error-color: #F15866;
-$grey-color: #ababab;
-$border-color: rgba(0,0,0,0.16);
-$hinted: rgba(0,0,0,0.32);
-$white-color:#fff;
-$black-light-color: rgba(0,0,0,0.04);
+@import "helpers.scss";
 
 .form__label {
-  min-width: 21%;
+  min-width: 28%;
   margin: 0 40px 20px 0;
   position: relative;
   display: block;
@@ -53,9 +41,9 @@ $black-light-color: rgba(0,0,0,0.04);
     }
   }
 
-  input:invalid:not(:placeholder-shown){
-    border-color: $error-color;
-  }
+  //input:invalid:not(:placeholder-shown){
+  //  border-color: $error-color;
+  //}
 
   label.error{
     position: absolute;

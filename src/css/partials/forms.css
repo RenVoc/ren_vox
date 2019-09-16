@@ -1,6 +1,6 @@
-/* Colors */
+/*Colors*/
 .form__label {
-  min-width: 21%;
+  min-width: 28%;
   margin: 0 40px 20px 0;
   position: relative;
   display: block;
@@ -30,8 +30,6 @@
       background: url("../../images/checkbox/icons/checked/disabled.svg"); }
     .form__label_disabled input:checked ~ .custom-checkbox {
       background: url("../../images/checkbox/icons/checked/disabled.svg"); }
-  .form__label input:invalid:not(:placeholder-shown) {
-    border-color: #F15866; }
   .form__label label.error {
     position: absolute;
     font-size: 10px;

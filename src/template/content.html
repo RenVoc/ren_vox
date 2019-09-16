@@ -16,27 +16,27 @@
     <div class="flex-container flex-container_row flex-container_wrap">
         <label for="fname" class="form__label">
             <p class="form__label__title">First name</p>
-            <input type="text" name="fname" id="fname" class="form__label__input" required>
+            <input type="text" name="fname" id="fname" class="form__label__input required" value="Ivan">
         </label>
         <label for="lname" class="form__label">
             <p class="form__label__title">Last name</p>
-            <input type="text" name="lname" id="lname" class="form__label__input" required>
+            <input type="text" name="lname" id="lname" class="form__label__input required" value="Olovyannikov">
         </label>
         <label for="cname" class="form__label">
             <p class="form__label__title">Company name</p>
-            <input type="text" name="cname" id="cname" class="form__label__input" required>
+            <input type="text" name="cname" id="cname" class="form__label__input required" value="Wrike">
         </label>
         <label for="jobtitle" class="form__label">
             <p class="form__label__title">Job title</p>
-            <input type="text" name="jobtitle" id="jobtitle" class="form__label__input" required>
+            <input type="text" name="jobtitle" id="jobtitle" class="form__label__input required" value="Crafter">
         </label>
         <label for="location" class="form__label">
             <p class="form__label__title">Location</p>
-            <input type="text" name="location" id="location" class="form__label__input" required>
+            <input type="text" name="location" id="location" class="form__label__input required" value="St. Petersburg">
         </label>
         <label for="pnumber" class="form__label">
             <p class="form__label__title">Phone number</p>
-            <input type="text" name="pnumber" id="pnumber" class="form__label__input" required>
+            <input type="text" name="pnumber" id="pnumber" class="form__label__input required" value="+79068071537" >
         </label>
     </div>
     <div class="form__buttons margin20">
@@ -46,7 +46,7 @@
 </form>
 
 <div class="section">
-    <form action="" class="form margin20">
+    <form action="" class="form margin20" id="workspace-settings">
         <h2>Workspace settings</h2>
         <div class="flex-container flex-container_row flex-container_wrap margin20">
             <label for="tzone" class="form__label">
@@ -74,7 +74,7 @@
                 </label>
                 <a href="#">How does subtask alignment work?</a>
             </div>
-            <button class="btn" disabled>Save settings</button>
+            <button class="btn" id="submit-settings" disabled>Save settings</button>
         </div>
     </form>
 </div>

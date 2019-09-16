@@ -1,4 +1,7 @@
-/* Colors */
+/*Colors*/
+.error-color {
+  color: #F15866; }
+
 .ui-color-item {
   width: 30%;
   margin: 0 33px 33px 0; }

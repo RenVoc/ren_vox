@@ -1,3 +1,4 @@
+/*Colors*/
 /* Third Party */
 @import url(../../bower_components/normalize.css/normalize.css);
 /*  Custom */
@@ -7,7 +8,6 @@
 @import url(partials/left-menu.css);
 @import url(partials/uikit.css);
 @import url(partials/adaptive.css);
-/*Colors*/
 html, body {
   height: 100%;
   width: 100%;
