@@ -25,6 +25,15 @@
   }
   &_disabled{
     color: $hinted;
+    input, select{
+      border: 1px solid $border-color;
+      background: none;
+      color: $hinted;
+      &:hover{
+        cursor: default;
+      }
+    }
+
     &:hover{
       color: $hinted;
       cursor: default;
@@ -43,18 +52,12 @@
     }
   }
 
-  //input:invalid:not(:placeholder-shown){
-  //  border-color: $error-color;
-  //}
-
   label.error{
     position: absolute;
     font-size: 10px;
     bottom: -20px;
     color: $error-color;
   }
-
-
 
   &_error{
     color: $error-color;

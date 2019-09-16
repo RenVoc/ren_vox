@@ -21,6 +21,12 @@
     margin: 0 40px 0 0; }
   .form__label_disabled {
     color: rgba(0, 0, 0, 0.32); }
+    .form__label_disabled input, .form__label_disabled select {
+      border: 1px solid rgba(0, 0, 0, 0.16);
+      background: none;
+      color: rgba(0, 0, 0, 0.32); }
+      .form__label_disabled input:hover, .form__label_disabled select:hover {
+        cursor: default; }
     .form__label_disabled:hover {
       color: rgba(0, 0, 0, 0.32);
       cursor: default; }
