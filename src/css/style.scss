@@ -54,16 +54,10 @@ img{
   max-width: 100%;
 }
 
-.menu-items{
-  &__item{
-    display: block;
-    color:$main-font-color;
-    font-size: 14px;
-    line-height: 20px;
-    text-decoration: none;
-    margin: 10px 0; 
-    &:hover{
-      text-decoration: underline;
+.dropdown-menu{
+  .block-links{
+    &__item {
+      padding: 10px 0;
     }
   }
 }
@@ -99,7 +93,6 @@ img{
 .block-links{
   &__item{
     color:$invert-font-color;
-    font-size:12px;
     border-radius: 0 2px 2px 0;
     line-height: 20px;
     padding: 6px 0;
@@ -132,6 +125,14 @@ img{
 
 .margin10{
   margin: 10px 0;
+}
+
+.fsz12{
+  font-size: 12px;
+}
+
+.color-black{
+  color:$main-font-color;
 }
 
 .avatar{

@@ -44,15 +44,8 @@ img {
   vertical-align: middle;
   max-width: 100%; }
 
-.menu-items__item {
-  display: block;
-  color: rgba(0, 0, 0, 0.9);
-  font-size: 14px;
-  line-height: 20px;
-  text-decoration: none;
-  margin: 10px 0; }
-  .menu-items__item:hover {
-    text-decoration: underline; }
+.dropdown-menu .block-links__item {
+  padding: 10px 0; }
 
 .flex-container {
   display: flex; }
@@ -76,7 +69,6 @@ img {
 
 .block-links__item {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 12px;
   border-radius: 0 2px 2px 0;
   line-height: 20px;
   padding: 6px 0;
@@ -104,6 +96,12 @@ img {
 
 .margin10 {
   margin: 10px 0; }
+
+.fsz12 {
+  font-size: 12px; }
+
+.color-black {
+  color: rgba(0, 0, 0, 0.9); }
 
 .avatar {
   display: flex;
