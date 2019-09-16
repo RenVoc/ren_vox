@@ -24,19 +24,10 @@ $black-light-color: rgba(0,0,0,0.04);
 }
 
 .header{
-  height: 56px;
   background: $panel-color;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 32px;
-  position: fixed;
-  width: calc(100% - 64px);
-  z-index: 1;
+  min-height: 56px;
   &__profile{
-    display: flex;
-    flex-direction: row;
     position:relative;
     .header__profile__avatar{
       margin: 0 10px;

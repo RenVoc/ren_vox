@@ -3,11 +3,8 @@
 .left-menu{
   background: $panel-color;
   width: 256px;
-  position: fixed;
-  z-index: 1;
-  overflow-y: scroll;
-  height: calc(100% - 53px);
-  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   &__separator{
     height: 16px;
     margin: 0 15%;
@@ -38,5 +35,3 @@
     }
   }
 }
-
-.left-menu::-webkit-scrollbar { width: 0 !important; }
