@@ -15,7 +15,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;       /* Remove default arrow */
-    background-image: url('../images/down-semibold_icon.svg');   /* Add custom arrow */
+    background-image: url('../images/svg/down-semibold_icon.svg');   /* Add custom arrow */
     background-repeat: no-repeat;
     background-position: 99% center;
 }

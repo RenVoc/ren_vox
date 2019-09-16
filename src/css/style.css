@@ -8,6 +8,7 @@
 @import url(partials/left-menu.css);
 @import url(partials/uikit.css);
 @import url(partials/adaptive.css);
+@import url(partials/sprite.css);
 html, body {
   height: 100%;
   width: 100%;
@@ -142,11 +143,13 @@ img {
     .btn_pseudo:hover, .btn_pseudo:focus, .btn_pseudo:active {
       color: #4488FF;
       background: none; }
-    .btn_pseudo:disabled {
+    .btn_pseudo_disabled {
       background: none;
       color: rgba(0, 0, 0, 0.32); }
-      .btn_pseudo:disabled:hover {
-        cursor: default; }
+      .btn_pseudo_disabled:hover {
+        cursor: default;
+        background: none;
+        color: rgba(0, 0, 0, 0.32); }
 
 .form__buttons__description {
   padding-left: 20px;

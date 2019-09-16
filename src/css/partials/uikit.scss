@@ -54,6 +54,7 @@
 .ui-buttons{
   &__item{
     margin:0 0 20px 0;
+    align-items: baseline;
     &__column{
       min-width: 110px;
       margin:0 20px 0 0;

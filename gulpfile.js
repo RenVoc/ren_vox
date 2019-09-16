@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     fileinclude = require('gulp-file-include'),
     cssmin = require('gulp-minify-css'),
+    svgSprite = require("gulp-svg-sprite"),
     browserSync = require("browser-sync"),
     reload = browserSync.reload;
 
@@ -14,6 +15,7 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/images/',
+        svg: 'build/images/svg',
         fonts: 'build/fonts/'
     },
     src: {
@@ -21,6 +23,7 @@ var path = {
         js: 'src/js/main.js',
         style: 'src/css/style.scss',
         img: 'src/images/**/*.*',
+        svg: 'src/images/svg/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
@@ -28,6 +31,7 @@ var path = {
         js: 'src/js/**/*.js',
         style: 'src/css/**/*.scss',
         img: 'src/images/**/*.*',
+        svg: 'src/images/svg/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     clean: './build'
@@ -77,18 +81,34 @@ gulp.task('image:build', function () {
         .pipe(reload({stream: true}));
 });
 
+
+gulp.task('svgSprite', function () {
+    return gulp.src(path.src.svg) // svg files for sprite
+        .pipe(svgSprite({
+                mode: {
+                    stack: {
+                        sprite: "../sprite.svg"  //sprite file name
+                    }
+                },
+            }
+        ))
+        .pipe(gulp.dest(path.build.svg)) //И бросим в build
+        .pipe(reload({stream: true}));
+});
+
 gulp.task('build', [
     'html:build',
     'style:build',
     'js:build',
-    'image:build'
+    'image:build',
+    'svgSprite'
 ]);
 
 gulp.task('watch', function(){
 
     gulp.watch('src/**/*.html').on('change', browserSync.reload);
     browserSync.init({
-        files: ['src/index.html','src/UI.html'],
+        files: ['src/index.html','src/ui.html'],
         server:{
             baseDir:'./build',
             directory: true
@@ -104,8 +124,8 @@ gulp.task('watch', function(){
     watch([path.watch.img], function(event, cb) {
         gulp.start('images:build');
     });
-    watch([path.watch.fonts], function(event, cb) {
-        gulp.start('fonts:build');
+    watch([path.watch.svg], function(event, cb) {
+        gulp.start('svgSprite');
     });
 });
 

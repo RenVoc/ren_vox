@@ -47,7 +47,8 @@
   background: rgba(0, 0, 0, 0.04); }
 
 .ui-buttons__item {
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px 0;
+  align-items: baseline; }
   .ui-buttons__item__column {
     min-width: 110px;
     margin: 0 20px 0 0; }

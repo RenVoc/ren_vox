@@ -22,7 +22,8 @@
   .form__label_disabled {
     color: rgba(0, 0, 0, 0.32); }
     .form__label_disabled:hover {
-      color: rgba(0, 0, 0, 0.32); }
+      color: rgba(0, 0, 0, 0.32);
+      cursor: default; }
     .form__label_disabled .custom-checkbox {
       background: url("../../images/checkbox/icons/unchecked/disabled.svg"); }
     .form__label_disabled:hover input ~ .custom-checkbox {

@@ -27,6 +27,7 @@
     color: $hinted;
     &:hover{
       color: $hinted;
+      cursor: default;
     }
     .custom-checkbox{
       background: url('../../images/checkbox/icons/unchecked/disabled.svg');

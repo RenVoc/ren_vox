@@ -10,6 +10,7 @@
 @import "partials/left-menu.css";
 @import "partials/uikit.css";
 @import "partials/adaptive.css";
+@import "partials/sprite.css";
 
 html, body {
   height: 100%;
@@ -179,11 +180,13 @@ img{
       color: $highlight1;
       background: none;
     }
-    &:disabled{
+    &_disabled{
       background: none;
       color: $hinted;
       &:hover{
         cursor: default;
+        background: none;
+        color: $hinted;
       }
     }
   }
