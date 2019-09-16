@@ -1,5 +1,15 @@
+/*Colors*/
 .header__wrike-logo {
   width: 65px;
   height: 22px; }
+
+.header__profile__icon {
+  position: relative; }
+  .header__profile__icon svg {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px; }
+    .header__profile__icon svg g {
+      fill: rgba(255, 255, 255, 0.9); }
 
 /*# sourceMappingURL=sprite.css.map */
