@@ -6,11 +6,11 @@
   -webkit-overflow-scrolling: touch; }
   .left-menu__separator {
     height: 16px;
-    margin: 0 15%;
+    margin: 0 40px;
     border-top: 1px solid #ababab; }
   .left-menu__wrapper {
     margin-bottom: 16px;
-    padding: 0 15% 0 0; }
+    padding: 0 40px 0 0; }
     .left-menu__wrapper:last-child {
       border-bottom: none; }
     .left-menu__wrapper__title {
@@ -18,10 +18,10 @@
       font-size: 12px;
       text-transform: uppercase;
       position: relative;
-      padding-left: 18%;
+      padding-left: 40px;
       margin: 8px 0; }
     .left-menu__wrapper .block-links__item {
-      padding-left: 18%; }
+      padding-left: 40px; }
       .left-menu__wrapper .block-links__item:hover {
         background: #4488FF;
         color: rgba(255, 255, 255, 0.9); }

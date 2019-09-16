@@ -7,12 +7,12 @@
   -webkit-overflow-scrolling: touch;
   &__separator{
     height: 16px;
-    margin: 0 15%;
+    margin: 0 40px;
     border-top: 1px solid $grey-color;
   }
   &__wrapper{
     margin-bottom: 16px;
-    padding: 0 15% 0 0;
+    padding: 0 40px 0 0;
     &:last-child{
       border-bottom: none;
     }
@@ -21,12 +21,12 @@
       font-size: 12px;
       text-transform: uppercase;
       position:relative;
-      padding-left: 18%;
+      padding-left: 40px;
       margin: 8px 0;
     }
     .block-links{
       &__item{
-        padding-left: 18%;
+        padding-left: 40px;
         &:hover{
           background: $highlight1;
           color:$invert-font-color;

@@ -90,7 +90,7 @@ img {
 
 .main-content {
   padding: 48px;
-  width: 100%;
+  width: calc(100% - 256px);
   background: #fff;
   margin-right: 10px;
   border-radius: 2px;
