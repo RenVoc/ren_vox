@@ -1,59 +1,59 @@
 h1{
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 40px;
-  color:rgba(0,0,0,0.9);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    color:rgba(0,0,0,0.9);
 }
 
 h2{
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
 }
 
 h3{
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
 }
 
 input{
-  width: calc(100% - 20px);
+    width: calc(100% - 20px);
 }
 
 input,select {
-  border-radius: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.32);
-  padding: 5px 10px;
-  font-size: 14px;
-  line-height: 22px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 input:focus, select:focus{
-  border-color:#4488ff;
-  outline: none;
+    border-color:#4488ff;
+    outline: none;
 }
 
 select{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url('../../images/svg/down-semibold_icon.svg');
-  background-repeat: no-repeat;
-  background-position: 99% center;
-  padding: 5px 20px 5px 10px;
-  width:100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../../images/svg/down-semibold_icon.svg');
+    background-repeat: no-repeat;
+    background-position: 99% center;
+    padding: 5px 20px 5px 10px;
+    width:100%;
 }
 
 a{
-  color: #4488ff;
+    color: #4488ff;
 }
 
 a:hover{
-  color: #3d7ae6;
-  text-decoration: none;
+    color: #3d7ae6;
+    text-decoration: none;
 }
 
 a,button{
-  outline: none;
+    outline: none;
 }
