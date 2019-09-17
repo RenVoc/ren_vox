@@ -16,8 +16,7 @@
     line-height: 20px;
     margin: 0; }
   .form__label_wa {
-    width: auto;
-    min-width: auto;
+    flex-basis: auto;
     margin: 0 40px 0 0; }
   .form__label_disabled {
     color: rgba(0, 0, 0, 0.32); }

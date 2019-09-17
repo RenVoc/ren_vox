@@ -19,8 +19,7 @@
     margin: 0;
   }
   &_wa{
-    width: auto;
-    min-width: auto;
+    flex-basis: auto;
     margin: 0 40px 0 0;
   }
   &_disabled{
