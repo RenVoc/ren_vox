@@ -18,7 +18,7 @@ h3{
 }
 
 input{
-    width: calc(100% - 20px);
+    width: calc(100% - 22px);
 }
 
 input,select {
